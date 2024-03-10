@@ -37,7 +37,16 @@ namespace AlunoNotas
             nota3 = double.Parse(Console.ReadLine());
             notaFinal = calculaNota(nota1, nota2, nota3);
             Console.WriteLine($"A nota final é :{notaFinal}");
-
+            bool passou = verificaAprovacao(notaFinal);
+            if (passou)
+            {
+                Console.WriteLine("A provado!");
+            }
+            else
+            {
+                double pontosFinal = Math.Abs(notaFinal - 60);
+                Console.WriteLine($"você precisa de {pontosFinal.ToString("F2")} pra ser aprovado.");
+            }
         }
     }
 }
