@@ -35,6 +35,8 @@ namespace AlunoNotas
             Console.WriteLine("digite a nota do terceiro trimestre.");
 
             nota3 = double.Parse(Console.ReadLine());
+            notaFinal = calculaNota(nota1, nota2, nota3);
+            Console.WriteLine($"A nota final é :{notaFinal}");
 
         }
     }
