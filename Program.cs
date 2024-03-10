@@ -48,7 +48,8 @@ namespace AlunoNotas
                 Console.WriteLine($"você precisa de {pontosFinal.ToString("F2")} pra ser aprovado.");
             }
             //usando a classe//
-
-        }
+            AlunoNotas aluno1 = new AlunoNotas();
+            
+                    }
     }
 }
