@@ -10,6 +10,17 @@ namespace AlunoNotas
             return (notaFinal);
 
         }
+        public static bool verificaAprovacao(double notaFinal)
+        {
+            if (notaFinal>=60)
+            {
+                return (true);
+            }
+            else
+            {
+                return (false);
+            }
+        }
         static void Main(string[] args)
         {
             string nomeAluno = string.Empty;
