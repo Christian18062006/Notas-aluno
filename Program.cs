@@ -47,6 +47,8 @@ namespace AlunoNotas
                 double pontosFinal = Math.Abs(notaFinal - 60);
                 Console.WriteLine($"você precisa de {pontosFinal.ToString("F2")} pra ser aprovado.");
             }
+            //usando a classe//
+
         }
     }
 }
