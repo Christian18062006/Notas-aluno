@@ -4,6 +4,12 @@ namespace AlunoNotas
 {
     class Program
     {
+        public static double calculaNota(double nota1, double nota2, double nota3)
+        {
+            double notaFinal = (nota1 * 3.0 + nota2 * 3.5 + nota3 * 3.5) / (3.0+3.5+3.5);
+            return (notaFinal);
+
+        }
         static void Main(string[] args)
         {
             string nomeAluno = string.Empty;
@@ -16,7 +22,9 @@ namespace AlunoNotas
             Console.WriteLine("digite a nota do segundo trimestre.");
             nota2 = double.Parse(Console.ReadLine());
             Console.WriteLine("digite a nota do terceiro trimestre.");
+
             nota3 = double.Parse(Console.ReadLine());
+
         }
     }
 }
