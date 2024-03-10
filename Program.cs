@@ -48,7 +48,23 @@ namespace AlunoNotas
                 Console.WriteLine($"você precisa de {pontosFinal.ToString("F2")} pra ser aprovado.");
             }
             //usando a classe//
-
+            Notas aluno1 = new Notas();
+            aluno1.nome = nomeAluno;
+            aluno1.nota1 = nota1;
+            aluno1.nota2=nota2;
+            aluno1.nota3=nota3;
+            double calculoNota1 = aluno1.calculaNota();
+            Console.WriteLine($"nota final: {calculoNota1}");
+            bool aprovado = aluno1.verificaAprovacao();
+            if (aprovado)
+            {
+                Console.WriteLine("Aprovado!");
+            }
+            else
+            {
+                double pontosFalta = Math.Abs(calculoNota1 - 60);
+                Console.WriteLine($"Você precisa de {pontosFalta.ToString("F2")} para ser aprovado.");
+            }
                     }
     }
 }
